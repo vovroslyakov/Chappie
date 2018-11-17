@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:padding="16dp"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/iv_img_kart_id"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/electric_go_kart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_img_kart_id"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo_id"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/chappie_logo" />
+
+        <TextView
+            android:id="@+id/tv_logo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_logo_text"
+            android:textColor="@color/black_color"
+            android:textSize="28sp"
+            android:typeface="monospace" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
