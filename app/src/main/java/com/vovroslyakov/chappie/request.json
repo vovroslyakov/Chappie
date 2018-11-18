@@ -1,0 +1,17 @@
+[
+  {
+    "model":"телега",
+    "price":42.99,
+    "imgUrl":"https://www.dropbox.com/s/fhx2npov7fbpdln/blue.png?dl=0"
+  },
+  {
+    "model":"тачка",
+    "price":30.99,
+    "imgUrl":"https://www.dropbox.com/s/6h9mjpetk4bdj0h/green.png?dl=0"
+  },
+  {
+    "model":"повозка",
+    "price":20.99,
+    "imgUrl":"https://www.dropbox.com/s/d5iu7q3gtcls2nr/orange.png?dl=0"
+  }
+]

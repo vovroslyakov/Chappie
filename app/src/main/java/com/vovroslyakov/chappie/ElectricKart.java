@@ -5,18 +5,21 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ElectricKart {
 
-    private String modelKart;
+    private String model;
     private int price;
+    private String imgUrl;
 
     public String getModelKart() {
-        return modelKart;
+        return model;
     }
 
     public void setModelKart(String modelKart) {
-        this.modelKart = modelKart;
+        this.model = modelKart;
     }
+
 
     public int getPrice() {
         return price;
@@ -26,10 +29,17 @@ public class ElectricKart {
         this.price = price;
     }
 
-    public ElectricKart(String modelKart, int price) {
-        this.modelKart = modelKart;
+    public String getImageUrl() {
+        return imgUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imgUrl = imageUrl;
+    }
+
+    public ElectricKart(String modelKart, int price, String imgUrl) {
+        this.model = modelKart;
         this.price = price;
-
-
+        this.imgUrl = imgUrl;
     }
 }
