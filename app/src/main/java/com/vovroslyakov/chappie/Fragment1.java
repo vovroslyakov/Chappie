@@ -23,11 +23,11 @@ public class Fragment1 extends Fragment implements OnRecyclerViewItemClickListen
         LinearLayoutManager lm = new LinearLayoutManager(getActivity());
         list.setLayoutManager(lm);
 
-        List<Ekart> products = new ArrayList<>(10);
+        List<ElectricKart> products = new ArrayList<>(10);
 
-        products.add(new Ekart("тележка"));
-        products.add(new Ekart("повозка"));
-        products.add(new Ekart("образец"));
+        products.add(new ElectricKart("тележка", 300));
+        products.add(new ElectricKart("повозка", 200));
+        products.add(new ElectricKart("образец", 100));
 
 
         adapter = new MyAdapter(products);
@@ -39,6 +39,5 @@ public class Fragment1 extends Fragment implements OnRecyclerViewItemClickListen
 
     @Override
     public void onClick() {
-
     }
 }

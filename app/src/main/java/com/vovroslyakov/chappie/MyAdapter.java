@@ -12,10 +12,10 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    private List<Ekart> productList;
+    private List<ElectricKart> productList;
     private static int numberIndexCount;
 
-    MyAdapter(List<Ekart> pro) {
+    MyAdapter(List<ElectricKart> pro) {
         productList = pro;
         numberIndexCount = 0;
     }
@@ -33,7 +33,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         View view = inflater.inflate(layoutIdForItem, viewGroup, false);
 
         MyViewHolder viewHolder = new MyViewHolder(view);
-        viewHolder.itemViewIndex.setText("Индекс: " + productList.get(numberIndexCount).toString());
+        viewHolder.itemViewIndex.setText("Индекс: " + productList.get(numberIndexCount).getModelKart()
+                + " " + productList.get(numberIndexCount).getPrice());
 
         numberIndexCount++;
 
