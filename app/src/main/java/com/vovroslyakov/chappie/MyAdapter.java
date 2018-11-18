@@ -8,17 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    public OnRecyclerViewItemClickListener myClickListener;
-    private int numberItems;
+    private List<Ekart> productList;
     private static int numberIndexCount;
 
-    public MyAdapter(int numberOfItems) {
-        numberItems = numberOfItems;
+    MyAdapter(List<Ekart> pro) {
+        productList = pro;
         numberIndexCount = 0;
-
-
     }
 
 
@@ -34,7 +33,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         View view = inflater.inflate(layoutIdForItem, viewGroup, false);
 
         MyViewHolder viewHolder = new MyViewHolder(view);
-        viewHolder.itemViewIndex.setText("Индекс: " + numberIndexCount);
+        viewHolder.itemViewIndex.setText("Индекс: " + productList.get(numberIndexCount).toString());
 
         numberIndexCount++;
 
@@ -48,7 +47,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-        return numberItems;
+        return productList.size();
     }
 
 
@@ -58,7 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         TextView itemViewNumber;
         TextView itemViewIndex;
 
-        public MyViewHolder(@NonNull View itemView) {
+        MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             itemViewNumber = itemView.findViewById(R.id.tv_number_item_list_id);

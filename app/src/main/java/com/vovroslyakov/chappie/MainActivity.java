@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
         mIndicator.setViewPager(mPager);
 
         drawerLayout.openDrawer(Gravity.START);
-
-
     }
 
     @Override
@@ -53,6 +51,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 }

@@ -17,12 +17,12 @@ public class Fragment2 extends Fragment{
 
 		View rootView = inflater.inflate(R.layout.fragment_1, null);
 
-		list = rootView.findViewById(R.id.rv_list_id);
-		LinearLayoutManager lm = new LinearLayoutManager(getActivity());
-		list.setLayoutManager(lm);
-
-		adapter = new MyAdapter(30);
-		list.setAdapter(adapter);
+//		list = rootView.findViewById(R.id.rv_list_id);
+//		LinearLayoutManager lm = new LinearLayoutManager(getActivity());
+//		list.setLayoutManager(lm);
+//
+//		adapter = new MyAdapter(30);
+//		list.setAdapter(adapter);
 
 		return rootView;
 

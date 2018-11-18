@@ -1,5 +1,5 @@
 package com.vovroslyakov.chappie;
 
-public interface OnRecyclerViewItemClickListener {
+public interface  OnRecyclerViewItemClickListener {
     void onClick();
 }

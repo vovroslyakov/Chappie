@@ -27,15 +27,49 @@
             android:layout_height="130dp"
             android:src="@drawable/chappie_logo" />
 
-        <TextView
-            android:id="@+id/tv_logo_id"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/tv_logo_text"
-            android:textColor="@color/black_color"
-            android:textSize="28sp"
-            android:typeface="monospace" />
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginRight="16dp"
+                android:id="@+id/tv_logo1_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tv_logo1_text"
+                android:textColor="@color/red_color"
+                android:textSize="28sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginRight="16dp"
+                android:id="@+id/tv_logo2_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tv_logo2_text"
+                android:textColor="@color/red_color"
+                android:textSize="28sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_logo3_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tv_logo3_text"
+                android:textColor="@color/red_color"
+                android:textSize="28sp"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
 
 
     </LinearLayout>
